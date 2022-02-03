@@ -1,0 +1,37 @@
+{
+    "editor.detectIndentation": false,
+    "typescript.extension.sortImports.maxNamedImportsInSingleLine": 10,
+    "typescript.extension.sortImports.sortOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.fixAll.sortJSON": true
+    },
+    "cSpell.ignoreWords": [
+        "nestjs",
+        "Pagings",
+        "commentable",
+        "pino",
+        "unfollow",
+        "unfollowing",
+        "websockets",
+        "middlewares",
+        "fanout",
+        "upsert"
+    ],
+    "cSpell.ignorePaths": [
+        "**/package-lock.json",
+        "**/node_modules/**",
+        "**/vscode-extension/**",
+        "**/.git/objects/**",
+        ".vscode",
+        ".vscode-insiders",
+        ".env*",
+        "src/i18n/"
+    ],
+    "sortJSON.excludedFiles": ["package.json", "package-lock.json"],
+    "cSpell.words": ["backoff"],
+    "typescript.tsdk": "node_modules/typescript/lib"
+}
