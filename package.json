@@ -1,25 +1,25 @@
 {
-  "name": "smart-constract",
-  "version": "1.0.0",
-  "description": "",
-  "main": "truffle-config.js",
-  "directories": {
-    "test": "test"
-  },
+  "name": "compound-supply-examples",
+  "version": "2.0.0",
+  "description": "Code examples for supplying Ethereum assets to the Compound Protocol. https://compound.finance/",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "complite": "npx tsc",
-    "start": "tsc && node dist/app.js",
-    "bridge": "./node_modules/.bin/ethereum-bridge -a 9 -H 127.0.0.1 -p 8546 --dev",
-    "chain": "ganache-cli -p 8546 --defaultBalanceEther 10000 --db ./ganache/"
+    "start": "node ./scripts/run-localhost-fork.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "compound finance",
+    "ethereum",
+    "web3"
+  ],
+  "author": "Compound Labs, Inc.",
+  "license": "MIT",
   "dependencies": {
-    "ts-node": "^10.4.0"
-  },
-  "devDependencies": {
-    "typescript": "^4.5.5"
+    "@compound-finance/compound-js": "^0.4.1",
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "ethers": "^5.4.6",
+    "hardhat": "^2.6.4",
+    "web3": "^1.5.2"
   }
 }
